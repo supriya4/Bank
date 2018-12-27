@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+</head>
+<body>
+  <h1>Enter ifsc code to get details of the bank</h1>
+  <form action='/serve' method="POST">
+    code:<input type="text" name="code"><br>
+
+    <input type="submit" value="submit">
+    </form>
+  <div>
+    <form action='/details' method="POST">
+      city:<input type="text" name="city">
+      name:<input type="text" name="name">
+      <input type="submit" value="submit">
+    </form>
+    
+
+</body>
+</html>

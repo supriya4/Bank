@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Bank
+{% endblock %}
+
+{% block body %}
+    <h1>Bank Details</h1>
+    <table border="1">
+
+    {% for items in ba %}
+    <tr>
+      <th>{{ Name }}</th>
+      <td>{{ items.Name }}</td>
+      <th>{{ code }}</th>
+      <td>{{ items.Code}}</td>
+      <th>{{ Address }}</th>
+      <td>{{ items.Address}}</td>
+      <th>{{ Phone }}</th>
+      <td>{{ items.Phone}}</td}
+      <th>{{ City }}</th>
+      <td>{{ items.City}}</td>
+      <th>{{ Branch}}</th>
+      <td>{{ items.Branch}}</td>
+    </tr>
+    {% endfor %}
+
+{% endblock %}
